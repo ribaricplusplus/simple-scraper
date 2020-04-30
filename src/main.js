@@ -18,7 +18,7 @@ async function loadPage(){
   console.log("Page loaded")
 }
 
-function startChild(){
+function startScraper(){
   childProcess = cp.fork('src/script.js', {stdio: 'inherit'})
   childProcess.on('error', (err) => {
     console.log("Child returned error")
@@ -34,14 +34,14 @@ function startChild(){
   })
 }
 
-function stopChild(){
+function stopScraper(){
   childProcess.kill()
 }
 
 const server = repl.start()
 
-server.context.startChild = startChild
-server.context.stopChild = stopChild
+server.context.startChild = startScraper
+server.context.stopChild = stopScraper
 loadPage()
 server.on('exit', () => {
   console.log("Exiting...")
