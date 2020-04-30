@@ -19,6 +19,6 @@ Run `npm install`
 
 Run `npm run start`
 
-A process will open in the command line. Run the scraper with `runScraper()`.
+A process will open in the command line. Run the scraper with `startScraper()`.
 
 The scraper can be stopped at any time using `stopScraper()`.
