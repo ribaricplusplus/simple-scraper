@@ -1,13 +1,11 @@
 {
-  "name": "skilltest",
+  "name": "scraper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "node --experimental-repl-await src/main.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "puppeteer": "^3.0.2"
